@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"# SRE Knowledge Base\nInterview prep + SLO/SLI reference","x":0,"y":-400,"width":380,"height":80,"color":"0"},
+		{"id":"label-interview","type":"text","text":"## Interview Prep\n13 questions · 4 rounds","x":-460,"y":-300,"width":200,"height":60,"color":"6"},
+		{"id":"file-interview","type":"text","text":"## 📄 面试模拟\n13 questions · 4 rounds\n`SRE-DevOps高级面试模拟-13题答案.md`","x":-460,"y":-220,"width":340,"height":90,"color":"2"},
+		{"id":"label-slo","type":"text","text":"## SLO Reference\nFormulas · PromQL · Burn Rate","x":240,"y":-300,"width":200,"height":60,"color":"6"},
+		{"id":"file-slo","type":"text","text":"## 📄 SLO 知识总结\nFormulas · PromQL · Burn Rate\n`SRE-SLO-ErrorBudget-知识总结.md`","x":220,"y":-220,"width":340,"height":90,"color":"2"},
+		{"id":"round1","type":"text","text":"### Round 1: Kernel\n%sy, OOM, perf, eBPF\nTroubleshooting methodology","x":-520,"y":-80,"width":240,"height":90,"color":"1"},
+		{"id":"round2","type":"text","text":"### Round 2: System Design\nMulti-DC, rate limiting\nObservability platform","x":-260,"y":-80,"width":240,"height":90,"color":"1"},
+		{"id":"round3","type":"text","text":"### Round 3: SLO Culture\nError budget policy\nIncident management","x":-520,"y":50,"width":240,"height":90,"color":"1"},
+		{"id":"round4","type":"text","text":"### Round 4: Scenarios\nPressure tests, trade-offs\nBusiness-aligned decisions","x":-260,"y":50,"width":240,"height":90,"color":"1"},
+		{"id":"sli-def","type":"text","text":"### Core Concepts\nSLI / SLO / SLA\nMeasurement windows","x":240,"y":-80,"width":240,"height":90,"color":"5"},
+		{"id":"error-budget","type":"text","text":"### Error Budget\nCalculation, burn rate\nAlerting thresholds","x":500,"y":-80,"width":240,"height":90,"color":"5"},
+		{"id":"promql","type":"text","text":"### PromQL Recipes\nAvailability, P95 latency\nBurn rate queries","x":240,"y":50,"width":240,"height":90,"color":"5"},
+		{"id":"multi-window","type":"text","text":"### Multi-Window SLO\nRolling vs calendar\nCompliance thresholds","x":500,"y":50,"width":240,"height":90,"color":"5"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"title","fromSide":"bottom","toNode":"file-interview","toSide":"top"},
+		{"id":"e2","fromNode":"title","fromSide":"bottom","toNode":"file-slo","toSide":"top"},
+		{"id":"e3","fromNode":"file-interview","fromSide":"bottom","toNode":"round1","toSide":"top"},
+		{"id":"e4","fromNode":"file-interview","fromSide":"bottom","toNode":"round2","toSide":"top"},
+		{"id":"e5","fromNode":"file-interview","fromSide":"bottom","toNode":"round3","toSide":"top"},
+		{"id":"e6","fromNode":"file-interview","fromSide":"bottom","toNode":"round4","toSide":"top"},
+		{"id":"e7","fromNode":"file-slo","fromSide":"bottom","toNode":"sli-def","toSide":"top"},
+		{"id":"e8","fromNode":"file-slo","fromSide":"bottom","toNode":"error-budget","toSide":"top"},
+		{"id":"e9","fromNode":"file-slo","fromSide":"bottom","toNode":"promql","toSide":"top"},
+		{"id":"e10","fromNode":"file-slo","fromSide":"bottom","toNode":"multi-window","toSide":"top"},
+		{"id":"e11","fromNode":"round3","fromSide":"right","toNode":"sli-def","toSide":"left","label":"SLO culture ↔ SLO theory"}
+	]
+}

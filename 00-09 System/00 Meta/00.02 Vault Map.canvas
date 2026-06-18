@@ -6,7 +6,15 @@
 		{"id":"writing","type":"text","text":"## 20-29 Writing\nEssays, notes, daily journal","x":-500,"y":100,"width":280,"height":100,"color":"3"},
 		{"id":"knowledge","type":"text","text":"## 30-39 Knowledge\nResources, reading list","x":300,"y":100,"width":280,"height":100,"color":"5"},
 		{"id":"tracking","type":"text","text":"## 40-49 Tracking\nFinance, routines, to-dos","x":-500,"y":350,"width":280,"height":100,"color":"4"},
-		{"id":"creative","type":"text","text":"## 50-59 Creative\nDrawings, media, experiments","x":300,"y":350,"width":280,"height":100,"color":"6"}
+		{"id":"creative","type":"text","text":"## 50-59 Creative\nDrawings, media, experiments","x":300,"y":350,"width":280,"height":100,"color":"6"},
+		{"id":"proj-11.01","type":"file","file":"10-19 Projects/11 Active/11.01 Example Project.md","x":320,"y":-120,"width":280,"height":100,"color":"2"},
+		{"id":"proj-11.02","type":"file","file":"10-19 Projects/11 Active/11.02 SRE Knowledge Base.md","x":320,"y":0,"width":280,"height":100,"color":"2"},
+		{"id":"note-22.01","type":"file","file":"20-29 Writing/22 Notes/22.01 Scratch Pad.md","x":-480,"y":220,"width":240,"height":80,"color":"3"},
+		{"id":"note-31.01","type":"file","file":"30-39 Knowledge/31 Resources/31.01 Resources.md","x":320,"y":220,"width":240,"height":80,"color":"5"},
+		{"id":"note-31.02","type":"file","file":"30-39 Knowledge/31 Resources/31.02 SRE DevOps Interview Prep.md","x":320,"y":320,"width":240,"height":80,"color":"5"},
+		{"id":"note-31.03","type":"file","file":"30-39 Knowledge/31 Resources/31.03 SRE SLO Error Budget.md","x":320,"y":420,"width":240,"height":80,"color":"5"},
+		{"id":"note-32.01","type":"file","file":"30-39 Knowledge/32 Reading/32.01 Reading List.md","x":320,"y":520,"width":240,"height":80,"color":"5"},
+		{"id":"note-42.01","type":"file","file":"40-49 Tracking/42 Routines/42.01 To-Dos.md","x":-480,"y":470,"width":240,"height":80,"color":"4"}
 	],
 	"edges":[
 		{"id":"e1","fromNode":"center","fromSide":"left","toNode":"system","toSide":"right"},
@@ -14,6 +22,14 @@
 		{"id":"e3","fromNode":"center","fromSide":"left","toNode":"writing","toSide":"right"},
 		{"id":"e4","fromNode":"center","fromSide":"right","toNode":"knowledge","toSide":"left"},
 		{"id":"e5","fromNode":"center","fromSide":"left","toNode":"tracking","toSide":"right"},
-		{"id":"e6","fromNode":"center","fromSide":"right","toNode":"creative","toSide":"left"}
+		{"id":"e6","fromNode":"center","fromSide":"right","toNode":"creative","toSide":"left"},
+		{"id":"e7","fromNode":"proj-11.01","fromSide":"top","toNode":"projects","toSide":"bottom"},
+		{"id":"e8","fromNode":"proj-11.02","fromSide":"top","toNode":"projects","toSide":"bottom"},
+		{"id":"e9","fromNode":"note-22.01","fromSide":"top","toNode":"writing","toSide":"bottom"},
+		{"id":"e10","fromNode":"note-31.01","fromSide":"top","toNode":"knowledge","toSide":"bottom"},
+		{"id":"e11","fromNode":"note-31.02","fromSide":"top","toNode":"knowledge","toSide":"bottom"},
+		{"id":"e12","fromNode":"note-31.03","fromSide":"top","toNode":"knowledge","toSide":"bottom"},
+		{"id":"e13","fromNode":"note-32.01","fromSide":"top","toNode":"knowledge","toSide":"bottom"},
+		{"id":"e14","fromNode":"note-42.01","fromSide":"top","toNode":"tracking","toSide":"bottom"}
 	]
 }
